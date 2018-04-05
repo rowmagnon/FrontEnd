@@ -10,6 +10,7 @@
 	    <meta property="og:image" content="https://forkdelta.github.io/images/logo.png" />
 
 		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Rubik:700&subset=latin' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Archivo+Black:400&subset=latin' rel='stylesheet' type='text/css'>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -71,8 +72,9 @@
 				font-family: 'Helvetica', sans-serif;
 				padding: 70px 0;
 			}
-			.newfont {
+			.logo-font {
 				font-family: 'Archivo Black', sans-serif;
+				letter-spacing:-0.08em;
 			}
 
 			h1 {
@@ -240,23 +242,23 @@
 			}
 
 			.timeline .demo-card.green {
-				background: #77DD77;
+				background: #356e99;
 			}
-
+			.push-down {
+				padding-top: 50px;
+			}
 		</style>
 	</head>
 
 	<body>
-<a name="top"></a>
 		<div class="header">
-			
 			<a class="hash" href="#roadmap">Roadmap</a>
 			<a class="hash" href="#donate">Donate</a>
 			<a class="hash" href="#faqs">FAQs</a>
 		</div>
 
 		<a name="#roadmap"></a>
-		<h1><span class="newfont">AGOREX</span> Roadmap</h1>
+		<h1><span class="logo-font">AGOREX</span> Roadmap</h1>
 
 		<section class=timeline>
 			<div class="demo-card-wrapper">
@@ -317,7 +319,7 @@
 			</div>
 		</section>
 
-		<h2>Possible Future Changes</h2>
+		<h2 class="push-down"><strong>Future Changes</strong></h2>
 
 		<section class=timeline>
 			<div class="demo-card-wrapper">
@@ -350,6 +352,15 @@
 		    
 			</div>
 		</section>
+
+			<div class="content card" style="margin-top: 120px">
+				<h5 class="card-header">Donate</h5>
+				<div class="card-body">
+				<h5 class="card-title">Special title treatment</h5>
+				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
 
 		<a name="#donate"></a>
 		<h1 style="margin-top: 120px;">Donate</h1>
