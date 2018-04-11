@@ -26,45 +26,34 @@
 		<script>
 			
 			$(document).ready(function($) {
-
 				//if page loaded with a hash, smooth scroll to it
 				if (window.location.hash !== '') {
 					scroll_to_hash(window.location.hash);
 				}
-
 				//bind accordion
 				$('#faqs').find('.accordion-toggle').click(function(){
-
 					//Expand or collapse this panel
 					$(this).next().slideToggle('fast');
-
 					//Hide the other panels
 					$(".accordion-content").not($(this).next()).slideUp('fast');
-
 				});
-
 				// Add smooth scrolling to nav links
 				$("a.hash").on('click', function(event) {
 					event.preventDefault();
-
 					scroll_to_hash(this.hash);
-
 					window.location.hash = this.hash;
 				});
 			});
-
 			function scroll_to_hash(hash) {
 				if (hash === '#roadmap') {
 					var offsettop = 0;
 				} else {
 					var offsettop = $('a[name="' + hash + '"]').offset().top;
 				}
-
 				$('html, body').animate({
 					scrollTop: offsettop,
 				}, 1000);
 			}
-
 		</script>
 
 
@@ -542,8 +531,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-  </body>
+    <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.3.1.slim.js"><\/script>')</script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
 </html>
